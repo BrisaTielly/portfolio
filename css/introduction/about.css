@@ -1,0 +1,75 @@
+.about {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-me {
+  grid-column: 1/-1;
+  justify-self: center;
+  text-align: center;
+}
+
+.about-exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+}
+
+.cards {
+  display: flex;
+  gap: 12px;
+  grid-column: 1/-1;
+}
+
+.about-card {
+  background-color: var(--cor-1);
+  padding: 22px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.about-card .font-1-m {
+  font-weight: 500;
+}
+
+.about-exp .font-2-m {
+  font-weight: 400;
+}
+
+.about-exp .pink-btn {
+  grid-column: 1;
+  align-self: start;
+  margin-top: 18px;
+}
+
+.intro-music {
+  grid-column: 1;
+}
+
+.about-exp p {
+  grid-column: 1/-1;
+  max-width: 50ch;
+}
+
+.intro-music {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-1);
+  padding: 12px 28px;
+  border-radius: 8px;
+  gap: 16px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1100px) {
+  .about-card {
+    margin-bottom: 20px;
+    padding: 12px 40px;
+  }
+}

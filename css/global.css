@@ -1,0 +1,42 @@
+body {
+  background-color: var(--cor-2);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+p,
+h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 60px;
+}
+
+.pink-btn {
+  color: var(--cor-p3);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.27px;
+  background-color: var(--cor-p1);
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,192 @@
+.intro {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.intro-icons {
+  align-self: center;
+}
+
+.intro-icons li {
+  padding-top: 30px;
+}
+
+.intro-info {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.intro-info h2 {
+  display: flex;
+  align-items: center;
+}
+
+.intro-info h1 {
+  /* font-size: 5rem; */
+  margin-bottom: 14px;
+  color: var(--cor-10);
+}
+
+.intro-info h2::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: var(--cor-p2);
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.intro-info p {
+  margin-top: 14px;
+  min-width: 30ch;
+}
+
+.pink-btn {
+  margin-top: 38px;
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  gap: 12px;
+}
+
+.pink-btn:hover {
+  background: linear-gradient(#dbb3b7, #bd8a8f);
+}
+
+.intro-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    gap: 18px;
+  }
+
+  .intro-image img {
+    max-width: none;
+    width: 360px;
+  }
+}
+
+@media (max-width: 850px) {
+  .intro {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .intro-info h1 {
+    font-size: 5rem;
+  }
+
+  .intro-info h2 {
+    font-size: 2rem;
+  }
+
+  .intro-info p {
+    font-size: 1.2rem;
+    max-width: 50ch;
+  }
+
+  .intro-info {
+    position: relative;
+  }
+
+  .intro-info::after {
+    content: "";
+    background: url(../../images/icons/detalhes.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .intro-image {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-info h1 {
+    font-size: 4rem;
+  }
+
+  .intro-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-info p {
+    font-size: 1rem;
+  }
+
+  .intro {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .intro {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .intro-info h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .intro-info h1 {
+    font-size: 2.9rem;
+  }
+
+  .intro-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .intro-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .intro-info::after {
+    display: none;
+  }
+  .intro-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-info h2 {
+    font-size: 0.8rem;
+  }
+
+  .intro-info h2::before {
+    width: 50px;
+  }
+
+  .intro-info p {
+    font-size: 0.7rem;
+    min-width: 18ch;
+  }
+
+  .pink-btn {
+    margin-top: 18px;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .intro-icons img {
+    width: 25px;
+  }
+}
