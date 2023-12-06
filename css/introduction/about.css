@@ -5,6 +5,12 @@
   gap: 16px;
 }
 
+.foto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .about-me {
   grid-column: 1/-1;
   justify-self: center;
@@ -15,26 +21,19 @@
 .about-exp {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
+  align-items: end;
   justify-items: start;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  /* grid-column: 1/-1; */
 }
 
 .about-card {
   background-color: var(--cor-1);
-  padding: 8px 40px;
+  padding: 16px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 8px;
-  justify-self: center;
+  justify-self: start;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 
   text-align: center;
@@ -54,8 +53,8 @@
 
 .about-exp .pink-btn {
   grid-column: 1;
-  align-self: start;
-  margin-top: 18px;
+  align-self: center;
+  margin-top: 0px;
 }
 
 .intro-music {
@@ -76,20 +75,50 @@
   border-radius: 8px;
   gap: 16px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  align-self: center;
 }
 
 @media (max-width: 1100px) {
   .about-card {
-    padding: 8px 16px;
+    padding: 8px 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-card {
+    padding: 8px 24px;
   }
 }
 
 @media (max-width: 950px) {
+  .about-exp {
+    gap: 18px 0px;
+  }
+
   .about-card {
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
   }
 
   .pink-btn {
     padding: 8px 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .foto-div {
+    display: none;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .about-card {
+    justify-self: center;
+    padding: 12px 65px;
+  }
+
+  .about-exp {
   }
 }
