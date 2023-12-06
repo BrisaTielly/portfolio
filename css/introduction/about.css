@@ -9,29 +9,39 @@
   grid-column: 1/-1;
   justify-self: center;
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .about-exp {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   justify-items: start;
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
-  grid-column: 1/-1;
+  /* grid-column: 1/-1; */
 }
 
 .about-card {
   background-color: var(--cor-1);
-  padding: 22px 64px;
+  padding: 8px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   border-radius: 8px;
+  justify-self: center;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.card-two li:last-child {
+  min-width: 12ch;
 }
 
 .about-card .font-1-m {
@@ -50,6 +60,7 @@
 
 .intro-music {
   grid-column: 1;
+  align-self: flex-start;
 }
 
 .about-exp p {
@@ -69,7 +80,16 @@
 
 @media (max-width: 1100px) {
   .about-card {
-    margin-bottom: 20px;
-    padding: 12px 40px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-card {
+    padding: 8px 12px;
+  }
+
+  .pink-btn {
+    padding: 8px 16px;
   }
 }
