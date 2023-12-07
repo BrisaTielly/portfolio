@@ -95,10 +95,6 @@
     gap: 18px 0px;
   }
 
-  .about-card {
-    /* padding: 8px 12px; */
-  }
-
   .pink-btn {
     padding: 8px 16px;
   }
@@ -111,14 +107,99 @@
 
   .about {
     grid-template-columns: 1fr;
-    align-content: center;
   }
 
   .about-card {
-    justify-self: center;
     padding: 12px 65px;
   }
 
   .about-exp {
+    justify-self: center;
+    grid-template-columns: minmax(0, 250px) minmax(0, 250px);
+  }
+
+  .about-exp p {
+    justify-self: start;
+  }
+
+  .about-exp .pink-btn {
+    justify-self: start;
+  }
+
+  .intro-music {
+    justify-self: start;
+    grid-column: 1/-1;
+  }
+
+  .card-two {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 12px 0;
+    width: 35vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-card {
+    width: 32vw;
+  }
+
+  .about-me {
+    margin-bottom: 30px;
+  }
+
+  .about-exp .pink-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-two {
+    grid-column: 1/-1;
+  }
+
+  .about-card {
+    width: 65vw;
+    justify-self: start;
+  }
+
+  .intro-music {
+    padding: 12px 18px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 325px) {
+  .about-card {
+    width: 60vw;
+    justify-self: start;
+  }
+
+  .about-exp .pink-btn {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .intro-music {
+    flex-direction: row;
+    padding: 0;
+    width: 20vw;
+    background-color: white;
+  }
+
+  .intro-music img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 270px) {
+  .about-card {
+    width: 50vw;
   }
 }

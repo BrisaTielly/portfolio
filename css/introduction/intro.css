@@ -169,6 +169,10 @@
 }
 
 @media (max-width: 380px) {
+  .intro {
+    grid-template-columns: minmax(0, 300px);
+  }
+
   .intro-info {
     align-items: center;
   }
