@@ -63,6 +63,8 @@
   height: auto;
 }
 
+/* Responsividade */
+
 @media (max-width: 900px) {
   .intro {
     gap: 18px;

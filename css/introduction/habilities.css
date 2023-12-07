@@ -1,0 +1,43 @@
+.habilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.habilities-skills {
+  background-color: var(--cor-0);
+  margin-top: 64px;
+  width: 30vw;
+  border-radius: 8px;
+  padding: 20px 40px;
+}
+
+.habilities-skills li p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.habilities-skills li p::before {
+  content: "";
+  display: inline-block;
+  background: url(../../images/icons/check.svg);
+  width: 20px;
+  height: 20px;
+  /* position: absolute; */
+}
+
+.habilities-skills li {
+  margin-bottom: 12px;
+}
+
+.habilities-skills h3 {
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.habilities-skills span {
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
