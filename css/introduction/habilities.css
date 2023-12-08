@@ -43,6 +43,12 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 500px) {
+  .habilities-skills {
+    width: 50vw;
+  }
+}
+
 @media (max-width: 380px) {
   .habilities-skills {
     margin-top: 32px;
